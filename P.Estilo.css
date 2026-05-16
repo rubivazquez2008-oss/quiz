@@ -1,0 +1,134 @@
+
+/* Animacion del titulo */
+@keyframes flotar{
+    0%{
+         transform: translateY(0px); /* Empieza en su posición normal */
+
+    }
+    50%{
+        transform: translateY(-5px); /* Sube 5 píxeles */
+    }
+    100%{
+        transform: translateY(0px); /* Vuelve a bajar */
+    }
+}
+
+/* Cuerpo */
+body{
+    padding: 600px;
+    height: 100%;
+    background-image: url(Fotos/Fondo\ 2.png);
+	background-size:cover;
+    background-repeat:no-repeat;
+    font-family: Georgia, serif;
+    vertical-align: middle;
+}
+
+/* Caja del formulario */
+.quiz-box{
+    backdrop-filter: blur(5px);
+    width: 85%;
+    max-width: 850px;
+    padding: 35px;
+    border-radius: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    border: 5px dashed #ff9ff3;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    vertical-align: middle;
+}
+
+/* Efecto al pasar el raton */
+.quiz-box:hover{
+    transform: scale(1.01);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+    vertical-align: middle;
+}
+
+/* Titulo */
+.quiz-box h1{
+    text-align: center;
+    color: #6c5ce7;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.15);
+    animation: flotar 3s infinite ease-in-out;
+    vertical-align: middle;
+}
+
+/* Preguntas */
+h3{
+    color: #ff7675;
+    background: #ffeaa7;
+    padding: 12px;
+    border-radius: 15px;
+    transition: 0.3s;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* Efectos de las preguntas */
+h3:hover{
+    background: #fdcb6e;
+    transform: translateX(5px);
+}
+
+/* Respuestas */
+input[type="radio"]{
+    margin: 12px 10px 12px 0;
+    transform: scale(1.3);
+    cursor: pointer;
+    accent-color: #6c5ce7;
+    transition: transform 0.2s;
+    vertical-align: middle;
+}
+
+/* Efecto en las respuestas (Circulos) */
+input[type="radio"]:hover{
+    transform: scale(1.5);
+}
+
+/* Formulario */
+form{
+    color: #2d3436;
+    font-size: 18px;
+    line-height: 1.8;
+    vertical-align: middle;
+}
+
+/* Lineas que separan */
+hr{
+    border: none;
+    height: 4px;
+    border-radius: 20px;
+    background: linear-gradient(to right, #74b9ff, #a29bfe, #ff9ff3);
+    margin: 25px 0;
+}
+
+/* Boton respuestas */
+button{
+    width: 100%;
+    padding: 18px;
+    margin-top: 30px;
+    border: none;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #55efc4, #74b9ff);
+    color: white;
+    font-family: Georgia, serif;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Efecto del boton */
+button:hover{
+    background: linear-gradient(135deg, #ff9ff3, #a29bfe);
+    transform: scale(1.05) rotate(-1deg);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.25);
+}
+
+/* Efecto al hacer click en el boton */
+button:active{
+    transform: scale(0.98);
+}
