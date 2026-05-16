@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+<meta name="author" content="Rubi Vazquez">
+
+<title> Quiz Python </title>
+
+<link rel="stylesheet" href="P.Estilo.css">
+<script type="text/javascript" src="Funcion2.js"></script>
+
+</head>
+<body>
+
+<div class="quiz-box">
+
+<h1> Quiz de Python 🐍 EDUCATIC </h1>
+
+<form id="quizForm">
+
+<h3> 1. ¿Cómo se imprime texto en Python? </h3>
+
+<div id="p1"></div>
+
+<!-- Se le coloca en nombre el numero de pregunta que es y en valor le colocamos la letra que corresponda. Esto es para el java -->
+<input type="radio" name="p1" value="a"> echo ("Hola") <br>
+<input type="radio" name="p1" value="b"> print ("Hola") <br>
+<input type="radio" name="p1" value="c"> console.log ("Hola") <br>
+
+<hr> <!-- Linea separadora vacia -->
+
+<h3> 2. ¿Cuál es una lista en Python? </h3>
+
+<div id="p2"></div>
+
+<input type="radio" name="p2" value="a"> {1,2,3} <br>
+<input type="radio" name="p2" value="b"> (1,2,3) <br>
+<input type="radio" name="p2" value="c"> [1,2,3] <br>
+
+<hr> <!-- Linea separadora vacia -->
+
+<h3> 3. ¿Cómo haces un comentario? </h3>
+
+<div id="p3"></div>
+
+<input type="radio" name="p3" value="a"> // comentario <br>
+<input type="radio" name="p3" value="b"> # comentario <br>
+<input type="radio" name="p3" value="c"> !-- comentario <br>
+
+<hr> <!-- Linea separadora vacia -->
+
+<h3> 4. ¿Cómo defines una variable? </h3>
+
+<div id="p4"></div>
+
+<input type="radio" name="p4" value="a"> x = 5 <br>
+<input type="radio" name="p4" value="b"> int x = 5 <br>
+<input type="radio" name="p4" value="c"> var x = 5 <br>
+<input type="radio" name="p4" value="d"> define x = 5 <br>
+
+<hr> <!-- Linea separadora vacia -->
+
+<h3> 5. ¿Qué tipo de dato es 'Hola' </h3>
+
+<div id="p5"></div>
+
+<input type="radio" name="p5" value="a"> int <br>
+<input type="radio" name="p5" value="b"> float <br>
+<input type="radio" name="p5" value="c"> string <br>
+<input type="radio" name="p5" value="d"> bool <br>
+
+<hr> <!-- Linea separadora vacia -->
+
+<h3> 6. ¿Qué palabra crea una función? </h3>
+
+<div id="p6"></div>
+
+<input type="radio" name="p6" value="a"> function <br>
+<input type="radio" name="p6" value="b"> func <br>
+<input type="radio" name="p6" value="c"> def <br>
+<input type="radio" name="p6" value="d"> create <br>
+
+<hr> <!-- Linea separadora vacia -->
+
+<h3> 7. ¿Qué devuelve len([1,2,3])? </h3>
+
+<div id="p7"></div>
+
+<input type="radio" name="p7" value="a"> 2 <br>
+<input type="radio" name="p7" value="b"> 3 <br>
+<input type="radio" name="p7" value="c"> 4 <br>
+<input type="radio" name="p7" value="d"> Error <br>
+
+<hr> <!-- Linea separadora vacia -->
+
+<h3> 8. ¿Qué operador es para igualdad? </h3>
+
+<div id="p8"></div>
+
+<input type="radio" name="p8" value="a"> = <br>
+<input type="radio" name="p8" value="b"> == <br>
+<input type="radio" name="p8" value="c"> != <br>
+<input type="radio" name="p8" value="d"> := <br>
+
+<hr> <!-- Linea separadora vacia -->
+
+<h3> 9. ¿Qué bucle repite mientras una condición sea verdadera? </h3>
+
+<div id="p9"></div>
+
+<input type="radio" name="p9" value="a"> for <br>
+<input type="radio" name="p9" value="b"> loop <br>
+<input type="radio" name="p9" value="c"> while <br>
+<input type="radio" name="p9" value="d"> repeat <br>
+
+<hr> <!-- Linea separadora vacia -->
+
+<h3> 10. ¿Qué valor booleano es correcto en Python? </h3>
+
+<div id="p10"></div>
+
+<input type="radio" name="p10" value="a"> true <br>
+<input type="radio" name="p10" value="b"> TRUE <br>
+<input type="radio" name="p10" value="c"> True <br>
+<input type="radio" name="p10" value="d"> Verdadero <br>
+
+<hr> <!-- Linea separadora vacia -->
+
+<!-- Aqui estamos haciendo un boton para llamar a la funcion que hemos creado, le colocamos el id = resultado para que la funcion lo busque por nombre de id. -->
+
+<button id="resultado" type="button" onclick="calificar()"> Terminar Quiz </button>
+
+</form>
+
+</body>
+</html>
